@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     //    playerRb.AddForce(Vector3.right * speed * horizontalInput);
     //}
     public float speed = 50f;
+    public float forwardSpeed = 50f;
     private float zBound = 6f;
     private Rigidbody playerRb;
     public bool teste;
@@ -41,14 +42,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        //ConstrainMovement();
+        ConstrainMovement();
     }
     //Player Movement
     void MovePlayer()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
        
-        playerRb.AddForce(Vector3.right * speed * horizontalInput);
+        playerRb.AddForce(Vector3.forward * speed * horizontalInput);
+        playerRb.AddForce(Vector3.left * forwardSpeed * Time.deltaTime );
     }
 
     //Avoid the player goin off the top or bottom of the screen
