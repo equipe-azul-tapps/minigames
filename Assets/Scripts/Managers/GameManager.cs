@@ -1,16 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
 
-    [Header("Debug only")]
+    [Header("Kart setup")]
     public int startTimer = 120; // A definir pelos GDs
+
+    [Header("Collectibles")]
+    public TMP_Text scoreText;
     public int score = 0;
+    public TMP_Text coinsText;
     public int coins = 0;
 
     private int _currentTime;
+
+    private void Update()
+    {
+        UpdateScore();
+        UpdateCoins();
+    }
 
     #region Score/Coins
     public void IncreaseScore(int value)
@@ -18,9 +29,25 @@ public class GameManager : Singleton<GameManager>
         score += value;
     }
 
+    private void UpdateScore()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {score}";
+        }
+    }
+
     public void IncreaseCoins(int amount)
     {
         coins += amount;
+    }
+
+    private void UpdateCoins()
+    {
+        if (coinsText != null)
+        {
+            coinsText.text = $"Coins: {coins}";
+        }
     }
 
     #endregion
