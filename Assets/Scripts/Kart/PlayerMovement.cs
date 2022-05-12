@@ -48,6 +48,12 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
             Debug.Log("Acelerou");
         }
+        if (other.transform.tag == "Timer")
+        {
+            GameManager.instance._currentTime += 10;
+            Destroy(other.gameObject);
+            Debug.Log("Mais tempo");
+        }
     }
 
     ////Avoid the player goin off the top or bottom of the screen
