@@ -1,68 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class PlayerMovement : MonoBehaviour
 {
-    //// Start is called before the first frame update
-    //private Rigidbody playerRb;
-    //private float speed = 10f;
-
-    //void Start()
-    //{
-    //    playerRb = GetComponent<Rigidbody>();
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    MovePlayer();
-    //}
-    //void MovePlayer()
-    //{
-    //    float horizontalInput = Input.GetAxis("Horizontal");
-    //    //float verticalInput = Input.GetAxis("Vertical");
-
-    //    playerRb.AddForce(Vector3.left * speed * horizontalInput);
-    //    playerRb.AddForce(Vector3.right * speed * horizontalInput);
-    //}
-    public float speed = 50f;
+    
+    public float speed = 0.05f;
     public float forwardSpeed = 50f;
     private float zBound = 6f;
     private Rigidbody playerRb;
     public bool teste;
+    public TMP_Text stamina;
+
+
 
 
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
+       playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         MovePlayer();
-        ConstrainMovement();
+        
     }
     //Player Movement
     void MovePlayer()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+
+        transform.Translate(0, 0, horizontalInput);
+        transform.Translate(-speed, 0, 0);
        
-        playerRb.AddForce(Vector3.forward * speed * horizontalInput);
-        playerRb.AddForce(Vector3.left * forwardSpeed * Time.deltaTime );
+        //playerRb.AddForce(Vector3.forward * speed * horizontalInput);
+        //playerRb.AddForce(Vector3.left * speed );
     }
 
-    //Avoid the player goin off the top or bottom of the screen
-    void ConstrainMovement()
+    private void OnTriggerEnter(Collider other)
     {
-        if (transform.position.z < -zBound)
+        if(other.transform.tag == "Stamina")
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
-        }
-        if (transform.position.z > zBound)
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+            speed += 0.01f;
+            Destroy(other.gameObject);
+            Debug.Log("Acelerou");
         }
     }
+
+    ////Avoid the player goin off the top or bottom of the screen
+    //void ConstrainMovement()
+    //{
+    //    if (transform.position.z < -zBound)
+    //    {
+    //        transform.position = new Vector3(transform.position.x, transform.position.y, -zBound);
+    //    }
+    //    if (transform.position.z > zBound)
+    //    {
+    //        transform.position = new Vector3(transform.position.x, transform.position.y, zBound);
+    //    }
+    //}
 }
