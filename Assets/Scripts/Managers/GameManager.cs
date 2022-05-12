@@ -17,7 +17,7 @@ public class GameManager : Singleton<GameManager>
     public TMP_Text coinsText;
     public int coins = 0;
 
-    private int _currentTime;
+    public int _currentTime;
 
     private void Start()
     {
@@ -68,7 +68,7 @@ public class GameManager : Singleton<GameManager>
         InvokeRepeating(nameof(CallTimer), 0f, 1f);
     }
 
-    private void CallTimer()
+    public void CallTimer()
     {
         _currentTime--;
         timerTxt.text = _currentTime.ToString(); 

@@ -7,6 +7,7 @@ TagManager:
   - Collectible
   - Coin
   - Stamina
+  - Timer
   layers:
   - Default
   - TransparentFX
