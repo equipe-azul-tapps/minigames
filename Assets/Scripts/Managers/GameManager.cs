@@ -7,7 +7,9 @@ public class GameManager : Singleton<GameManager>
 {
 
     [Header("Kart setup")]
-    public int startTimer = 120; // A definir pelos GDs
+    public int startTimer = 30; // A definir pelos GDs
+    public TMP_Text timerTxt;
+
 
     [Header("Collectibles")]
     public TMP_Text scoreText;
@@ -17,6 +19,10 @@ public class GameManager : Singleton<GameManager>
 
     private int _currentTime;
 
+    private void Start()
+    {
+        StartTimer();
+    }
     private void Update()
     {
         UpdateScore();
@@ -65,6 +71,7 @@ public class GameManager : Singleton<GameManager>
     private void CallTimer()
     {
         _currentTime--;
+        timerTxt.text = _currentTime.ToString(); 
     }
 
     #endregion
