@@ -6,11 +6,13 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     [Header("Paths")]
-    public int threshold = 10;
+    public bool isCyclic = false;
     public List<Transform> paths;
 
     private NavMeshAgent _agent;
+    [SerializeField]
     private int _pathCount = 0;
+    private bool _isPlayerMovingForward = true;
 
     private void Awake()
     {
@@ -24,16 +26,51 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(_agent.transform.position, paths[_pathCount].position) < threshold)
+        if (Vector3.Distance(_agent.transform.position, paths[_pathCount].position) < .5f)
+        {
+            _agent.destination = isCyclic ?
+                NextCyclicPosition() :
+                NextNonCyclicPosition();
+        }
+    }
+
+    /// <summary>
+    /// Movimento não cíclico, finalizando seu movimento no fim do caminho e retornando por ele
+    /// </summary>
+    private Vector3 NextNonCyclicPosition()
+    {
+        if (_isPlayerMovingForward)
         {
             _pathCount++;
-
             if (_pathCount >= paths.Count)
             {
-                _pathCount = 0;
+                _isPlayerMovingForward = false;
+                _pathCount--;
+            }
+        }
+        else
+        {
+            _pathCount--;
+            if (_pathCount < 0)
+            {
+                _isPlayerMovingForward = true;
+                _pathCount++;
             }
 
-            _agent.destination = paths[_pathCount].position;
         }
+
+        return paths[_pathCount].position;
+    }
+
+    /// <summary>
+    /// Movimento cíclico, finalizando sua trajetória onde começou
+    /// </summary>
+    private Vector3 NextCyclicPosition()
+    {
+        _pathCount++;
+
+        if (_pathCount >= paths.Count) _pathCount = 0;
+
+        return paths[_pathCount].position;
     }
 }
