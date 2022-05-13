@@ -26,6 +26,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        StartTimer();
         Time.timeScale = 1;
     }
 
