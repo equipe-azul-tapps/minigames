@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -54,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
             GameManager.instance._currentTime += 10;
             Destroy(other.gameObject);
             Debug.Log("Mais tempo");
+        }
+        if (other.transform.tag == "Finish")
+        {
+            SceneManager.LoadScene("SCN_Menu");
         }
     }
 

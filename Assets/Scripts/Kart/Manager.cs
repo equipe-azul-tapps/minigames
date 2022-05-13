@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class Manager : MonoBehaviour
     private GameManager gameManager;
     void Start()
     {
+        //gameManager = GetComponent<GameManager>;
         menuGameOver.SetActive(false);
+        InvokeRepeating("EndGame", 2, 5);
         //rnd = Random.Range(0, 3);
         //Instantiate(obs[rnd]);
     }
@@ -19,9 +22,20 @@ public class Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameManager._currentTime < 0)
+        //if(gameManager._currentTime <= 0)
+        //{
+        //    menuGameOver.SetActive(true);
+        //    SceneManager.LoadScene("SCN_Menu");
+
+        //}
+        
+    }
+    void EndGame()
+    {
+        if(menuGameOver.activeInHierarchy)
         {
-            menuGameOver.SetActive(true);
+            SceneManager.LoadScene("SCN_Menu");
         }
     }
+
 }

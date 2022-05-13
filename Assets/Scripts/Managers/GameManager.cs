@@ -80,6 +80,10 @@ public class GameManager : Singleton<GameManager>
         if (timerTxt != null)
         {
             _currentTime--;
+            if(_currentTime <= 0)
+            {
+                SceneManager.LoadScene("SCN_Menu");
+            }
             timerTxt.text = _currentTime.ToString();
         }
     }
