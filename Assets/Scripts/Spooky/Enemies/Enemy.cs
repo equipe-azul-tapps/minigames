@@ -21,17 +21,19 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        _agent.destination = paths[_pathCount].position;
+        if (paths.Count > 0)
+            _agent.destination = paths[_pathCount].position;
     }
 
     private void Update()
     {
-        if (Vector3.Distance(_agent.transform.position, paths[_pathCount].position) < .5f)
-        {
-            _agent.destination = isCyclic ?
-                NextCyclicPosition() :
-                NextNonCyclicPosition();
-        }
+        if (paths.Count > 0)
+            if (Vector3.Distance(_agent.transform.position, paths[_pathCount].position) < .5f)
+            {
+                _agent.destination = isCyclic ?
+                    NextCyclicPosition() :
+                    NextNonCyclicPosition();
+            }
     }
 
     /// <summary>
