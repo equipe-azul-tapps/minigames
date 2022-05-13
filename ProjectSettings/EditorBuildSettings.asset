@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menus/SCN_Menu_Kart.unity
+    guid: a49c0d598c64f914ab1d11f46d2d00f6
   m_configObjects: {}
