@@ -77,8 +77,11 @@ public class GameManager : Singleton<GameManager>
 
     public void CallTimer()
     {
-        _currentTime--;
-        timerTxt.text = _currentTime.ToString(); 
+        if (timerTxt != null)
+        {
+            _currentTime--;
+            timerTxt.text = _currentTime.ToString();
+        }
     }
 
     #endregion
@@ -94,6 +97,11 @@ public class GameManager : Singleton<GameManager>
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    public void ExitMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     #endregion
