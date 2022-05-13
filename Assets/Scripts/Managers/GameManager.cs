@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : Singleton<GameManager>
@@ -10,6 +11,10 @@ public class GameManager : Singleton<GameManager>
     public int startTimer = 30; // A definir pelos GDs
     public TMP_Text timerTxt;
 
+
+    [Header("Spooky setup")]
+    public GameObject player;
+    public GameObject lostScreen;
 
     [Header("Collectibles")]
     public TMP_Text scoreText;
@@ -21,8 +26,9 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
-        StartTimer();
+        Time.timeScale = 1;
     }
+
     private void Update()
     {
         UpdateScore();
@@ -64,7 +70,7 @@ public class GameManager : Singleton<GameManager>
         // Inicializa o timer
         _currentTime = startTimer;
 
-        // Chama a função imediatamente, a cada 1 segundo
+        // Chama a funï¿½ï¿½o imediatamente, a cada 1 segundo
         InvokeRepeating(nameof(CallTimer), 0f, 1f);
     }
 
@@ -72,6 +78,21 @@ public class GameManager : Singleton<GameManager>
     {
         _currentTime--;
         timerTxt.text = _currentTime.ToString(); 
+    }
+
+    #endregion
+
+    public void ShowLostScreen()
+    {
+        Time.timeScale = 0;
+        lostScreen.SetActive(true);
+    }
+
+    #region Menu
+    public void Retry()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     #endregion
