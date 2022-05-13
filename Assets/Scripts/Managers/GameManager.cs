@@ -72,7 +72,18 @@ public class GameManager : Singleton<GameManager>
     {
         _currentTime--;
         timerTxt.text = _currentTime.ToString(); 
+        if(_currentTime <= 0)
+        {
+            _currentTime = 0;
+
+           // GameOver();
+
+        }
     }
 
     #endregion
+    //public void GameOver()
+    //{
+        
+    //}
 }

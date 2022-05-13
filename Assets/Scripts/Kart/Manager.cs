@@ -5,17 +5,23 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject[] obs;
-    private int rnd;
+    //public GameObject[] obs;
+    //private int rnd;
+    public GameObject menuGameOver;
+    private GameManager gameManager;
     void Start()
     {
-        rnd = Random.Range(0, 3);
-        Instantiate(obs[rnd]);
+        menuGameOver.SetActive(false);
+        //rnd = Random.Range(0, 3);
+        //Instantiate(obs[rnd]);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(gameManager._currentTime < 0)
+        {
+            menuGameOver.SetActive(true);
+        }
     }
 }

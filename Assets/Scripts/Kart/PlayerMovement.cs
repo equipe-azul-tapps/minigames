@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRb;
     public bool teste;
     public TMP_Text stamina;
+    public bool gameOver = false;
 
 
 
