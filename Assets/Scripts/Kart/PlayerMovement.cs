@@ -44,18 +44,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        /* Funções realocadas para seus devidos scripts
+         
+        Utilizando interface Collectible
+         
         if(other.transform.tag == "Stamina")
         {
             speed += 0.01f;
             Destroy(other.gameObject);
             Debug.Log("Acelerou");
         }
+        
         if (other.transform.tag == "Timer")
         {
             GameManager.instance._currentTime += 10;
             Destroy(other.gameObject);
             Debug.Log("Mais tempo");
         }
+        */
         if (other.transform.tag == "Finish")
         {
             SceneManager.LoadScene("SCN_Menu");

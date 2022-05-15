@@ -7045,6 +7045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4fc0b9ac79ebd43989f38bf2ad6af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 772234581}
   startTimer: 30
   timerTxt: {fileID: 1101707997}
   player: {fileID: 0}

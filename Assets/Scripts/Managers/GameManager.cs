@@ -6,8 +6,8 @@ using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
-
     [Header("Kart setup")]
+    public PlayerMovement playerMovement;
     public int startTimer = 30; // A definir pelos GDs
     public TMP_Text timerTxt;
 

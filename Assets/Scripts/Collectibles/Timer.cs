@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : Collectible
+public class Timer : Collectible
 {
     public override void Collect()
     {
-        Debug.Log("Coletou");
-        GameManager.instance.IncreaseCoins(1);
+        Debug.Log("Mais tempo");
+        GameManager.instance._currentTime += 10;
     }
-
 }

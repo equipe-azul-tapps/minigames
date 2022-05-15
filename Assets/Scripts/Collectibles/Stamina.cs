@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stamina : MonoBehaviour
+public class Stamina : Collectible
 {
-    // Start is called before the first frame update
-    //private GameObject playerSpeed;
-    
+    public override void Collect()
+    {
+        Debug.Log("Acelerou");
+        GameManager.instance.playerMovement.speed += 0.01f;
+    }
+
 }
