@@ -1,16 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
+    [Header("Kart setup")]
+    public PlayerMovement playerMovement;
+    public int startTimer = 30; // A definir pelos GDs
+    public TMP_Text timerTxt;
 
-    [Header("Debug only")]
-    public int startTimer = 120; // A definir pelos GDs
+
+    [Header("Spooky setup")]
+    public GameObject player;
+    public GameObject lostScreen;
+
+    [Header("Collectibles")]
+    public TMP_Text scoreText;
     public int score = 0;
+    public TMP_Text coinsText;
     public int coins = 0;
 
-    private int _currentTime;
+    public int _currentTime;
+
+    private void Start()
+    {
+        StartTimer();
+        Time.timeScale = 1;
+    }
+
+    private void Update()
+    {
+        UpdateScore();
+        UpdateCoins();
+    }
 
     #region Score/Coins
     public void IncreaseScore(int value)
@@ -18,9 +42,25 @@ public class GameManager : Singleton<GameManager>
         score += value;
     }
 
+    private void UpdateScore()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {score}";
+        }
+    }
+
     public void IncreaseCoins(int amount)
     {
         coins += amount;
+    }
+
+    private void UpdateCoins()
+    {
+        if (coinsText != null)
+        {
+            coinsText.text = $"Coins: {coins}";
+        }
     }
 
     #endregion
@@ -31,13 +71,41 @@ public class GameManager : Singleton<GameManager>
         // Inicializa o timer
         _currentTime = startTimer;
 
-        // Chama a função imediatamente, a cada 1 segundo
+        // Chama a funï¿½ï¿½o imediatamente, a cada 1 segundo
         InvokeRepeating(nameof(CallTimer), 0f, 1f);
     }
 
-    private void CallTimer()
+    public void CallTimer()
     {
-        _currentTime--;
+        if (timerTxt != null)
+        {
+            _currentTime--;
+            if(_currentTime <= 0)
+            {
+                SceneManager.LoadScene("SCN_Menu");
+            }
+            timerTxt.text = _currentTime.ToString();
+        }
+    }
+
+    #endregion
+
+    public void ShowLostScreen()
+    {
+        Time.timeScale = 0;
+        lostScreen.SetActive(true);
+    }
+
+    #region Menu
+    public void Retry()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+
+    public void ExitMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     #endregion
