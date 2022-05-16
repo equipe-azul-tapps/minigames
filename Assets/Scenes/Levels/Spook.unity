@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45126444, g: 0.50095123, b: 0.5733935, a: 1}
+  m_IndirectSpecularColor: {r: 0.45126432, g: 0.50095147, b: 0.57339346, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13910,7 +13910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1329168291}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
@@ -17761,7 +17761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329168292}
-  - component: {fileID: 1329168293}
+  - component: {fileID: 1329168291}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -17769,6 +17769,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1329168291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329168290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4fc0b9ac79ebd43989f38bf2ad6af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 0}
+  startTimer: 30
+  timerTxt: {fileID: 0}
+  player: {fileID: 2062694520}
+  lostScreen: {fileID: 1060353305}
+  scoreText: {fileID: 0}
+  score: 0
+  coinsText: {fileID: 15442160}
+  coins: 0
+  _currentTime: 0
 --- !u!4 &1329168292
 Transform:
   m_ObjectHideFlags: 0
@@ -17783,23 +17805,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1329168293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329168290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a891fe311357d144cbdf14512a8afb17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2062694520}
-  lostScreen: {fileID: 1060353305}
-  coinsText: {fileID: 15442160}
-  coins: 0
-  _currentTime: 0
 --- !u!1 &1331034479
 GameObject:
   m_ObjectHideFlags: 0
@@ -24805,7 +24810,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1329168291}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ExitMainMenu
         m_Mode: 1

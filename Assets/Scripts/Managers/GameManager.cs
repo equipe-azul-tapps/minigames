@@ -8,9 +8,8 @@ public class GameManager : Singleton<GameManager>
 {
     [Header("Kart setup")]
     public PlayerMovement playerMovement;
-    public int startTimer = 30; // A definir pelos GDs
+    public int startTimer = 30;
     public TMP_Text timerTxt;
-
 
     [Header("Spooky setup")]
     public GameObject player;
