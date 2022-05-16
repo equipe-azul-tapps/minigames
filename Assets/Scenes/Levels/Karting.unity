@@ -6997,8 +6997,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1039115043}
-  - component: {fileID: 1039115044}
   - component: {fileID: 1039115042}
+  - component: {fileID: 1039115044}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -7042,14 +7042,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039115041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c4fc0b9ac79ebd43989f38bf2ad6af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a7473c12797b86499320e8dc9acc2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 772234581}
   startTimer: 30
   timerTxt: {fileID: 1101707997}
-  player: {fileID: 0}
-  lostScreen: {fileID: 0}
   scoreText: {fileID: 0}
   score: 0
   coinsText: {fileID: 691506003}
