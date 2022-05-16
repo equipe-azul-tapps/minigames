@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class SpookyGameManager : MonoBehaviour
+public class SpookyGameManager : Singleton<SpookyGameManager>
 {
     [Header("Spooky setup")]
     public GameObject player;

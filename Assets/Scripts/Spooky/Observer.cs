@@ -22,7 +22,7 @@ public class Observer : MonoBehaviour
 
     private void Start()
     {
-        target = GameManager.instance.player;
+        target = SpookyGameManager.instance.player;
     }
 
     void Update()
@@ -35,7 +35,7 @@ public class Observer : MonoBehaviour
                 Debug.DrawRay(transform.position, target.transform.position - transform.position);
                 if (hitInfo.transform.CompareTag("Player"))
                 {
-                    GameManager.instance.ShowLostScreen();
+                    SpookyGameManager.instance.ShowLostScreen();
                 }
             }
         }
