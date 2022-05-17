@@ -8,6 +8,12 @@ public class Coin : Collectible
     {
         Debug.Log("Coletou");
         GameManager.instance.IncreaseCoins(1);
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Collect();
+        Destroy(gameObject);
     }
 
 }
