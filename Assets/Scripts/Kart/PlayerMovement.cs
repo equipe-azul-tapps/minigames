@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip timerSound;
     private int rn;
     private float xRange = 5.4f;
+    
 
 
 
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        
 
         if(transform.position.x > xRange)
         {
