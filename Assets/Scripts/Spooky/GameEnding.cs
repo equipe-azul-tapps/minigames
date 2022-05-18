@@ -5,56 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class GameEnding : MonoBehaviour
 {
-    public float fadeDuration = 1f;
-    public float displayImageDuration = 1f;
-    public GameObject player;
-    public CanvasGroup exitBackgroundImageCanvasGroup; 
-    public CanvasGroup caughtBackgroundImageCanvasGroup;
+    private bool _isPlayerAtExit;
 
-    bool m_IsPlayerAtExit;
-    bool m_IsPlayerCaught;
-    float m_Timer;
-    
-    void OnTriggerEnter (Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.transform.CompareTag("Player"))
         {
-            m_IsPlayerAtExit = true;
+            _isPlayerAtExit = true;
         }
     }
 
-    public void CaughtPlayer ()
+    void Update()
     {
-        m_IsPlayerCaught = true;
+        if (_isPlayerAtExit)
+            EndLevel();
     }
 
-    void Update ()
+    void EndLevel()
     {
-        if (m_IsPlayerAtExit)
-        {
-            EndLevel (exitBackgroundImageCanvasGroup, false);
-        }
-        else if (m_IsPlayerCaught)
-        {
-            EndLevel (caughtBackgroundImageCanvasGroup, true);
-        }
-    }
-
-    void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart)
-    {
-        m_Timer += Time.deltaTime;
-        imageCanvasGroup.alpha = m_Timer / fadeDuration;
-
-        if (m_Timer > fadeDuration + displayImageDuration)
-        {
-            if (doRestart)
-            {
-                SceneManager.LoadScene (0);
-            }
-            else
-            {
-                Application.Quit ();
-            }
-        }
+        SceneManager.LoadScene("SCN_Menu_Spooky");
     }
 }
