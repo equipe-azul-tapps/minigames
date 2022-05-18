@@ -1,17 +1,27 @@
 fileFormatVersion: 2
-guid: e9b2b622bde978d44a3d6e5c5115e0ce
+guid: e45d086b07b75514aad0b3df939a9204
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 2370392764423149803
-    second: SK_Hamster_Mesh|Run
-  externalObjects:
+      74: 1545700607616745251
+    second: SK_Hamster|Idle
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Hamster_Skin
-    second: {fileID: 2100000, guid: 477c9f0cbcf3b54438c75b4a22e8c63b, type: 2}
+      74: -6396810221127737062
+    second: SK_Hamster|Idle.001
+  - first:
+      74: -825817896055574212
+    second: SK_Hamster|Jump
+  - first:
+      74: 7924326088753356280
+    second: SK_Hamster|Run
+  - first:
+      74: -5521193702969894309
+    second: SK_Hamster|Tpose
+  - first:
+      74: 8692303053856211102
+    second: SK_Hamster|Walk
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
