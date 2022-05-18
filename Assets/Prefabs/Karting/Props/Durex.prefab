@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7308570091459035235}
   m_Layer: 0
   m_Name: Durex
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7614505151081403817}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 14.683136, y: -3.2017798, z: -351.00412}
-  m_LocalScale: {x: 7167.9985, y: 7167.9985, z: 7167.9985}
+  m_LocalScale: {x: 2000, y: 1500, z: 1500}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -109,7 +109,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.00096158026
-  m_Height: 0.0019231611
+  m_Radius: 0.00046880252
+  m_Height: 0.001990312
   m_Direction: 1
-  m_Center: {x: -0.000000009345969, y: 0.0000000021245796, z: -0.000000007043127}
+  m_Center: {x: 0.00012066597, y: 0.00007734696, z: -0.0008179444}

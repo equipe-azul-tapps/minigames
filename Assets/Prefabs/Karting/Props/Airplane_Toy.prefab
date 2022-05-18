@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6235049868587356978}
   m_Layer: 0
   m_Name: Airplane_Toy
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6504940604787013910}
-  m_LocalRotation: {x: -0.70258373, y: 0.07985073, z: 0.07985073, w: 0.70258373}
+  m_LocalRotation: {x: -0.70258373, y: 0.07985055, z: 0.07985055, w: 0.70258373}
   m_LocalPosition: {x: 56.183136, y: 12.698219, z: -357.3041}
-  m_LocalScale: {x: 33247.98, y: 33247.98, z: 33247.98}
+  m_LocalScale: {x: 1200, y: 1000, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

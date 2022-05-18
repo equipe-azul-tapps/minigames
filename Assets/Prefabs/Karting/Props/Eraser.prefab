@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2198945273931105700}
   m_Layer: 0
   m_Name: Eraser
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316547263615118888}
-  m_LocalRotation: {x: -0.6814947, y: 0.18858676, z: 0.18858674, w: 0.6814947}
+  m_LocalRotation: {x: -0.6814951, y: 0.18858546, z: 0.18858546, w: 0.6814951}
   m_LocalPosition: {x: 42.383133, y: -6.3017797, z: -456.6041}
-  m_LocalScale: {x: 8857.5, y: 8857.5, z: 8857.5}
+  m_LocalScale: {x: 500.00003, y: 500.00003, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

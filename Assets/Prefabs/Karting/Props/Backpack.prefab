@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8515087552207055483}
   m_Layer: 0
   m_Name: Backpack
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8857105824903733922}
-  m_LocalRotation: {x: -0.28362957, y: 0.58986545, z: 0.18139961, w: 0.73396677}
+  m_LocalRotation: {x: -0.28362823, y: 0.5898646, z: 0.18139988, w: 0.73396796}
   m_LocalPosition: {x: -7.529831, y: 9.29822, z: -356.3041}
-  m_LocalScale: {x: 12527.916, y: 12527.916, z: 12527.916}
+  m_LocalScale: {x: 500, y: 500, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
