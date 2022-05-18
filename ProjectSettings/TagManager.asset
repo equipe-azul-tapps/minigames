@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Stamina
   - Timer
+  - Object
   layers:
   - Default
   - TransparentFX
