@@ -9,12 +9,12 @@ public class Menu : MonoBehaviour
 
     public void PlaySpooky()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
     public void PlayKart()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
 
     public void ShowCredits()
