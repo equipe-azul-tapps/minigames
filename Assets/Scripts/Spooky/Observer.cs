@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Observer : MonoBehaviour
 {
-
     public GameObject target;
     public bool inRange = false;
+
+    private bool _playerSpotted = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,9 +36,22 @@ public class Observer : MonoBehaviour
                 Debug.DrawRay(transform.position, target.transform.position - transform.position);
                 if (hitInfo.transform.CompareTag("Player"))
                 {
+                    if (!_playerSpotted)
+                    {
+                        _playerSpotted = true;
+                        PlaySpotSound();
+                    }
                     GameManager.instance.ShowLostScreen();
                 }
             }
         }
+    }
+
+    private void PlaySpotSound()
+    {
+        AudioController ac = GameManager.instance.audioController;
+        int i = Random.Range(0, 4);
+
+        ac.ToqueSFX(ac.spottedSounds[i]);
     }
 }

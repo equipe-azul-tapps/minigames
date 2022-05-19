@@ -5,9 +5,6 @@ using UnityEngine.AI;
 
 public class PlayerNavMesh : MonoBehaviour
 {
-    [Header("Audio")]
-    public AudioController audioController;
-
     [Header("Debug only")]
     public Transform destination;
 
@@ -29,8 +26,10 @@ public class PlayerNavMesh : MonoBehaviour
     {
         if (other.transform.CompareTag("Coin"))
         {
+            AudioController ac = GameManager.instance.audioController;
             int i = Random.Range(0, 3);
-            audioController.ToqueSFX(audioController.coinSounds[i]);
+
+            ac.ToqueSFX(ac.coinSounds[i]);
         }
     }
 

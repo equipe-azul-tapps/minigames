@@ -14,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     [Header("Spooky setup")]
     public GameObject player;
     public GameObject lostScreen;
+    public AudioController audioController;
 
     [Header("Collectibles")]
     public TMP_Text scoreText;
