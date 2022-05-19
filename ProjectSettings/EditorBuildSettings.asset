@@ -15,4 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Kart.unity
     guid: 5bb804366fb8bf040bf0d59a43ad1626
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8d8a858141e4eda4da701e99e3b970a1, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 8f40a809058a22641abb9398c90ad055, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 32e85d077787102488721caf3b5310ae, type: 2}

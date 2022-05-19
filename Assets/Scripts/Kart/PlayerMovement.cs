@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     
     public float speed = 10f;
     public float turnSpeed = 10f;
+    public float horizontalInput;
    // private Rigidbody playerRb;   
     public TMP_Text stamina;
     public bool gameOver = false;
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     //Player Movement
     void MovePlayer()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        //horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
         transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
@@ -57,6 +58,22 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+    }
+
+    public void Left()
+    {
+        horizontalInput = -0.2f;
+    }
+
+    public void Right()
+    {
+        print("teste");
+        horizontalInput = 0.2f;
+    }
+
+    public void Stop()
+    {
+        horizontalInput = 0;
     }
 
     private void OnTriggerEnter(Collider other)
