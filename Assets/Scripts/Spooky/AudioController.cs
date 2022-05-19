@@ -7,7 +7,11 @@ public class AudioController : MonoBehaviour
     public AudioSource audioSourceMusicaDeFundo;
     public AudioSource audioSourceSFX;
     public AudioClip[] musicasDeFundo;
-    // Start is called before the first frame update
+
+    public AudioClip[] coinSounds;
+    public AudioClip[] spottedSounds;
+    public AudioClip[] fantasmaSounds;
+
     void Start()
     {
         int IndexDaMusicaDeFundo = Random.Range(0, musicasDeFundo.Length);
@@ -16,6 +20,7 @@ public class AudioController : MonoBehaviour
         audioSourceMusicaDeFundo.loop = true;
         audioSourceMusicaDeFundo.Play();
     }
+
     public void ToqueSFX(AudioClip clip)
     {
         audioSourceSFX.PlayOneShot(clip);
