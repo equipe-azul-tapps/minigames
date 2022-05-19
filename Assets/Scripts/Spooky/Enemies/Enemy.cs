@@ -5,12 +5,15 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public bool hasSound = false;
+
     [Header("Paths")]
     public bool isCyclic = false;
     public List<Transform> paths;
 
     private NavMeshAgent _agent;
-    [SerializeField]
     private int _pathCount = 0;
     private bool _isPlayerMovingForward = true;
 
@@ -21,6 +24,9 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        if (hasSound)
+            PlaySound();
+
         if (paths.Count > 0)
             _agent.destination = paths[_pathCount].position;
     }
@@ -74,5 +80,13 @@ public class Enemy : MonoBehaviour
         if (_pathCount >= paths.Count) _pathCount = 0;
 
         return paths[_pathCount].position;
+    }
+
+    private void PlaySound()
+    {
+        AudioController ac = GameManager.instance.audioController;
+        int i = Random.Range(0, 3);
+
+        audioSource.clip = ac.fantasmaSounds[i];
     }
 }

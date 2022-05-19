@@ -9,6 +9,8 @@ public class AudioController : MonoBehaviour
     public AudioClip[] musicasDeFundo;
 
     public AudioClip[] coinSounds;
+    public AudioClip[] spottedSounds;
+    public AudioClip[] fantasmaSounds;
 
     void Start()
     {
