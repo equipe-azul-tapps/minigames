@@ -6063,6 +6063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227992bfd1528054dbfa6390c89f2188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioController: {fileID: 1261517154}
   destination: {fileID: 0}
 --- !u!195 &256358854
 NavMeshAgent:
@@ -26393,6 +26394,10 @@ MonoBehaviour:
   audioSourceSFX: {fileID: 1261517153}
   musicasDeFundo:
   - {fileID: 8300000, guid: 2e61665ccdfc57343a5adc89dbc3d683, type: 3}
+  coinSounds:
+  - {fileID: 8300000, guid: 32cb10cdd709ada45b5a71cee04b0ebf, type: 3}
+  - {fileID: 8300000, guid: 4b32f7a74b6e9f54c9353c5f85b3508e, type: 3}
+  - {fileID: 8300000, guid: 81590f7a068c530478194a85e2d8e849, type: 3}
 --- !u!4 &1261517155
 Transform:
   m_ObjectHideFlags: 0

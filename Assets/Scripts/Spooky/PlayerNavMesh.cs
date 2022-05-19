@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class PlayerNavMesh : MonoBehaviour
 {
+    [Header("Audio")]
+    public AudioController audioController;
+
     [Header("Debug only")]
     public Transform destination;
 
@@ -19,8 +22,16 @@ public class PlayerNavMesh : MonoBehaviour
 
     private void Update()
     {
-        // _navMeshAgent.destination = destination.position;
         HandleMovement();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Coin"))
+        {
+            int i = Random.Range(0, 3);
+            audioController.ToqueSFX(audioController.coinSounds[i]);
+        }
     }
 
     private void HandleMovement()
@@ -34,14 +45,13 @@ public class PlayerNavMesh : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 _navMeshAgent.SetDestination(hit.point);
-                
             }
-            
+
         }
-    else
+        else
         {
-            animator.SetBool("IsMoving",false);
-            animator.SetBool("Idle",true);
+            animator.SetBool("IsMoving", false);
+            animator.SetBool("Idle", true);
         }
     }
 }
