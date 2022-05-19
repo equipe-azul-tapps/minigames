@@ -59,7 +59,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (coinsText != null)
         {
-            coinsText.text = coins.ToString();
+            coinsText.text = $"Coins: {coins}";
         }
     }
 

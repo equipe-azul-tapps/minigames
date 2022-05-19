@@ -6,29 +6,21 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject creditsScreen;
-    public GameObject menuScreen;
 
     public void PlaySpooky()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void PlayKart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
 
     public void ShowCredits()
     {
-         menuScreen.SetActive(false);
-         creditsScreen.SetActive(true);
+        StartCoroutine(DisplayScreen());
     }
-
-public void ShowMenu()
-{
-    menuScreen.SetActive(true);
-    creditsScreen.SetActive(false);
-}
 
     IEnumerator DisplayScreen()
     {
