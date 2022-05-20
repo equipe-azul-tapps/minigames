@@ -26439,9 +26439,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2e61665ccdfc57343a5adc89dbc3d683, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b2a40f54af2fe64c8714aa44270e4e9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.17
+  m_Volume: 0.454
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -26540,7 +26540,7 @@ MonoBehaviour:
   audioSourceMusicaDeFundo: {fileID: 1261517153}
   audioSourceSFX: {fileID: 1261517153}
   musicasDeFundo:
-  - {fileID: 8300000, guid: 2e61665ccdfc57343a5adc89dbc3d683, type: 3}
+  - {fileID: 8300000, guid: 9b2a40f54af2fe64c8714aa44270e4e9, type: 3}
   coinSounds:
   - {fileID: 8300000, guid: 32cb10cdd709ada45b5a71cee04b0ebf, type: 3}
   - {fileID: 8300000, guid: 4b32f7a74b6e9f54c9353c5f85b3508e, type: 3}
