@@ -30,6 +30,6 @@ public class GameEnding : MonoBehaviour
         GameManager.instance.audioController.ToqueSFX(winSound);
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("SCN_Menu_Spooky");
+        SceneManager.LoadScene(0);
     }
 }

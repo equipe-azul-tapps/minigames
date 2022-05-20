@@ -136,9 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d1b85b422ed4140acb9a14e189f52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  hasSound: 0
   isCyclic: 0
   paths: []
-  _pathCount: 0
 --- !u!1001 &8713554193995379600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,13 +147,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1178928905317149154}
     m_Modifications:
+    - target: {fileID: 5162167756997277764, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162167756997277764, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162167756997277764, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0041
+      objectReference: {fileID: 0}
     - target: {fileID: 7237793785066534981, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
       propertyPath: m_Name
       value: SM_Pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 7631702883162547361, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
       propertyPath: m_Range
-      value: 1.4
+      value: 1.1164532
       objectReference: {fileID: 0}
     - target: {fileID: 7631702883162547361, guid: de4637b895525c448bc8c4f5eea280fd, type: 3}
       propertyPath: m_Color.g
