@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject creditsScreen;
+    public GameObject menuScreen;
 
     public void PlaySpooky()
     {
@@ -19,14 +20,13 @@ public class Menu : MonoBehaviour
 
     public void ShowCredits()
     {
-        StartCoroutine(DisplayScreen());
+        menuScreen.SetActive(false);
+        creditsScreen.SetActive(true);
     }
 
-    IEnumerator DisplayScreen()
+    public void ShowMenu()
     {
-        creditsScreen.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        menuScreen.SetActive(true);
         creditsScreen.SetActive(false);
-
     }
 }
