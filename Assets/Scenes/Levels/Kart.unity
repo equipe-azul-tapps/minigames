@@ -18851,7 +18851,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 49b37d2c3401050429e484d2c8f8a3e4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.452
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -18953,18 +18953,18 @@ MonoBehaviour:
   stamina: {fileID: 0}
   gameOver: 0
   crashSound:
-  - {fileID: 8300000, guid: d579294e8a16a8f4b925c9f2fbbc02e6, type: 3}
-  - {fileID: 8300000, guid: d6a2506935a552e4c99acb2d082c7449, type: 3}
-  - {fileID: 8300000, guid: c0913777009a8674794f8d776239f4cd, type: 3}
+  - {fileID: 8300000, guid: bd117487a1824384b9ed61aca70d4e10, type: 3}
+  - {fileID: 8300000, guid: 31363e559e479d94ab3a28fe695882e5, type: 3}
+  - {fileID: 8300000, guid: 72050843b86724e43a5f113a71dc179c, type: 3}
   foodSounds:
-  - {fileID: 8300000, guid: 7a7f38e5fdbd60f47bc3121e8e2d8ebf, type: 3}
-  - {fileID: 8300000, guid: 4df935a3bd9e72e40a7482ffb90f21ea, type: 3}
-  - {fileID: 8300000, guid: 63adfce687bd791458b3c1e153529a5d, type: 3}
+  - {fileID: 8300000, guid: afd25b786163b46469d01c019e6d4054, type: 3}
+  - {fileID: 8300000, guid: f461efb3fc5653e46b16710ad29099d8, type: 3}
+  - {fileID: 8300000, guid: 76f4b7e7c55be0440b290bfc0d366d66, type: 3}
   coinSounds:
   - {fileID: 8300000, guid: 32cb10cdd709ada45b5a71cee04b0ebf, type: 3}
   - {fileID: 8300000, guid: 4b32f7a74b6e9f54c9353c5f85b3508e, type: 3}
   - {fileID: 8300000, guid: 81590f7a068c530478194a85e2d8e849, type: 3}
-  timerSound: {fileID: 8300000, guid: 5502448879667f7418510625a1eb4e36, type: 3}
+  timerSound: {fileID: 8300000, guid: cb0d53887220323408cc282e4195cc75, type: 3}
 --- !u!135 &1385802556
 SphereCollider:
   m_ObjectHideFlags: 0
