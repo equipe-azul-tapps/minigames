@@ -21,5 +21,5 @@ Felipe Vergara
 <b>Sound Designer 🎶</b>  
 Gustavo Sperling
 <br/>
-<b>Quality Assurance 🛠️</b>
+<b>Quality Assurance 🛠️</b>  
 Babi Freitas
