@@ -18,5 +18,8 @@ Caio Sanches
 Candida Vieira  
 Felipe Vergara
 <br/>
-<b>Quality Assurance</b>
+<b>Sound Designer 🎶</b>  
+Gustavo Sperling
+<br/>
+<b>Quality Assurance 🛠️</b>
 Babi Freitas
