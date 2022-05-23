@@ -4,7 +4,7 @@
 2020.3.34f1 (LTS)
 
 ### Membros 💻
-#### Game Developers
+> Game Developers
 Andressa Duarte  
 Alexandre Nascimento  
 Caio Sanches  
