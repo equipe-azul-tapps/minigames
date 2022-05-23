@@ -19,7 +19,7 @@ Candida Vieira
 Felipe Vergara  
   
 <b>Sound Designer 🎶</b>  
-Gustavo Sperling
-<br/>
+Gustavo Sperling  
+  
 <b>Quality Assurance 🛠️</b>  
 Babi Freitas
