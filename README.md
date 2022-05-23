@@ -16,8 +16,8 @@ Caio Sanches
 <br/>
 <b>Game Designer 📝</b>  
 Candida Vieira  
-Felipe Vergara
-<br/>
+Felipe Vergara  
+  
 <b>Sound Designer 🎶</b>  
 Gustavo Sperling
 <br/>
