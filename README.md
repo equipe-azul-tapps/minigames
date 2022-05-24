@@ -1,7 +1,7 @@
 ## Repositório Equipe Azul Kickstart@Tapps 2022
 
-### Jogue agora no Itch.io
-
+### Jogue agora no Itch.io ▶️
+[Jogar agora](https://m1nus.itch.io/my-little-hamster)
 
 Versão da Unity 🎮
 ---
