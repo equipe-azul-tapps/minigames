@@ -1,11 +1,14 @@
 ## Repositório Equipe Azul Kickstart@Tapps 2022
 
+### Jogue agora no Itch.io
+
+
 ### Versão da Unity 🎮
 2020.3.34f1 (LTS)
 
 ### Membros 🤖
 <b>Game Artist 🎨</b>  
-Suelem Suemi  
+- Suelem Suemi  
 Fabrício Vinícius  
 Enzo Orion  
 <br/>
