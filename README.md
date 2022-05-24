@@ -10,11 +10,10 @@ Versão da Unity 🎮
 Membros 🤖  
 ---
 <b>Game Artist 🎨</b>  
-- Suelem Suemi  
+> Suelem Suemi  
 - Fabrício Vinícius  
 - Enzo Orion  
 
----
 <b>Game Developers 💻</b>  
 - Andressa Duarte  
 - Alexandre Nascimento  
