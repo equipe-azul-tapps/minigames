@@ -1,7 +1,7 @@
 ## Repositório Equipe Azul Kickstart@Tapps 2022
 
 ### Jogue agora no Itch.io ▶️
-<iframe frameborder="0" src="https://itch.io/embed/1527901" width="552" height="167"><a href="https://m1nus.itch.io/my-little-hamster">My Little Hamster by m1nus, EnzoOrion, alerdn, FeVergara, Rainbowcorn Studio, babiruta, dressarte, fabriciof16, suelemsk, gustavosperling</a></iframe>
+[Jogar agora!](https://m1nus.itch.io/my-little-hamster)
 
 Versão da Unity 🎮
 ---
