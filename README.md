@@ -3,8 +3,6 @@
 ▶️ Jogue agora! ▶️
 ---
 <a href="https://m1nus.itch.io/my-little-hamster"><img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itch.io&logoColor=white" /></a>
-
----
   
 Versão da Unity 🎮
 ---
