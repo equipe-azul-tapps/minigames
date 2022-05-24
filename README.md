@@ -8,9 +8,10 @@
 
 ### Membros 🤖
 <b>Game Artist 🎨</b>  
+---
 - Suelem Suemi  
-Fabrício Vinícius  
-Enzo Orion  
+- Fabrício Vinícius  
+- Enzo Orion  
 <br/>
 <b>Game Developers 💻</b>  
 Andressa Duarte  
