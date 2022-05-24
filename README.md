@@ -13,18 +13,18 @@ Membros 🤖
 - Suelem Suemi  
 - Fabrício Vinícius  
 - Enzo Orion  
-<br/>
+
 <b>Game Developers 💻</b>  
-Andressa Duarte  
-Alexandre Nascimento  
-Caio Sanches  
-<br/>
+- Andressa Duarte  
+- Alexandre Nascimento  
+- Caio Sanches  
+
 <b>Game Designer 📝</b>  
-Candida Vieira  
-Felipe Vergara  
+- Candida Vieira  
+- Felipe Vergara  
   
 <b>Sound Designer 🎶</b>  
-Gustavo Sperling  
+- Gustavo Sperling  
   
 <b>Quality Assurance 🛠️</b>  
-Babi Freitas
+- Babi Freitas
