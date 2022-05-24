@@ -3,7 +3,8 @@
 ### Jogue agora no Itch.io
 
 
-### Versão da Unity 🎮
+Versão da Unity 🎮
+---
 2020.3.34f1 (LTS)
 
 Membros 🤖  
