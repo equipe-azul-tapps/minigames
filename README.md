@@ -6,7 +6,7 @@
 ### Versão da Unity 🎮
 2020.3.34f1 (LTS)
 
-### Membros 🤖  
+Membros 🤖  
 ---
 <b>Game Artist 🎨</b>  
 - Suelem Suemi  
