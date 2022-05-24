@@ -14,6 +14,7 @@ Membros 🤖
 - Fabrício Vinícius  
 - Enzo Orion  
 
+---
 <b>Game Developers 💻</b>  
 - Andressa Duarte  
 - Alexandre Nascimento  
