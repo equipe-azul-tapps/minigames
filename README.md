@@ -12,7 +12,7 @@ Membros 🤖
 ---
 <b>Game Artist 🎨</b>  
 - [Suelem Suemi](https://www.linkedin.com/in/suelemsuemi/)  
-- Fabrício Vinícius  
+- [Fabrício Vinícius](https://www.linkedin.com/in/fabr%C3%ADcio-santos-2a8793180/)  
 - [Enzo Orion](https://www.linkedin.com/in/enzo-orion-fecury-braga-b75b481a1/)  
 
 <b>Game Developers 💻</b>  
