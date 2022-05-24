@@ -12,13 +12,13 @@ Membros 🤖
 ---
 <b>Game Artist 🎨</b>  
 - [Suelem Suemi](https://www.linkedin.com/in/suelemsuemi/)  
-- [Fabrício Vinícius](https://www.linkedin.com/in/fabr%C3%ADcio-santos-2a8793180/)  
 - [Enzo Orion](https://www.linkedin.com/in/enzo-orion-fecury-braga-b75b481a1/)  
 
-<b>Game Developers 💻</b>  
+<b>Tech 💻</b>  
 - [Andressa Duarte](https://www.linkedin.com/in/dressarteortiz/)  
 - [Alexandre Nascimento](https://www.linkedin.com/in/alexandre-nascimento-84a7891b8/)  
 - Caio Sanches  
+- [Fabrício Vinícius](https://www.linkedin.com/in/fabr%C3%ADcio-santos-2a8793180/)  
 
   
 <b>Game Designer 📝</b>  
