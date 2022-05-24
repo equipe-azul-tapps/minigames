@@ -17,7 +17,7 @@ Membros 🤖
 <b>Tech 💻</b>  
 - [Andressa Duarte](https://www.linkedin.com/in/dressarteortiz/)  
 - [Alexandre Nascimento](https://www.linkedin.com/in/alexandre-nascimento-84a7891b8/)  
-- Caio Sanches  
+- [Caio Sanches](https://www.linkedin.com/in/caio-csanches/)  
 - [Fabrício Vinícius](https://www.linkedin.com/in/fabr%C3%ADcio-santos-2a8793180/)  
 
   
