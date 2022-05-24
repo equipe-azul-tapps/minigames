@@ -20,12 +20,15 @@ Membros 🤖
 - Alexandre Nascimento  
 - Caio Sanches  
 
+---
 <b>Game Designer 📝</b>  
 - Candida Vieira  
 - Felipe Vergara  
   
+---
 <b>Sound Designer 🎶</b>  
 - Gustavo Sperling  
-  
+
+---
 <b>Quality Assurance 🛠️</b>  
 - Babi Freitas
