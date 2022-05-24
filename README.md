@@ -11,24 +11,24 @@ Versão da Unity 🎮
 Membros 🤖  
 ---
 <b>Game Artist 🎨</b>  
-- Suelem Suemi  
+- [Suelem Suemi](https://www.linkedin.com/in/suelemsuemi/)  
 - Fabrício Vinícius  
-- Enzo Orion  
+- [Enzo Orion](https://www.linkedin.com/in/enzo-orion-fecury-braga-b75b481a1/)  
 
 <b>Game Developers 💻</b>  
-- Andressa Duarte  
-- Alexandre Nascimento  
+- [Andressa Duarte](https://www.linkedin.com/in/dressarteortiz/)  
+- [Alexandre Nascimento](https://www.linkedin.com/in/alexandre-nascimento-84a7891b8/)  
 - Caio Sanches  
 
   
 <b>Game Designer 📝</b>  
-- Candida Vieira  
-- Felipe Vergara  
+- [Candida Vieira](https://www.linkedin.com/in/candivieira/)  
+- [Felipe Vergara](https://www.linkedin.com/in/fevergara/)  
   
   
 <b>Sound Designer 🎶</b>  
-- Gustavo Sperling  
+- [Gustavo Sperling](https://www.linkedin.com/in/gustavo-sperling-1271141b5/)  
 
   
 <b>Quality Assurance 🛠️</b>  
-- Babi Freitas
+- [Babi Freitas](https://www.linkedin.com/in/cecilia-babi-freitas-b46866a9/)
